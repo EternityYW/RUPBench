@@ -26,7 +26,7 @@ We use the validation or test sets of each reasoning dataset as our source sampl
 - Syntactic perturbations alter sentence structure to evaluate the model’s understanding of grammar and sentence construction. We consider three types: It-cleft, Wh-cleft, and compound variations.
 - Semantic perturbations change the meaning or context of the text to evaluate the model’s understanding of deeper linguistic aspects. We consider three types: Red herrings, CheckList (Ribeiro et al., 2020) items, and StressTest (Naik et al., 2018) statements.
 
-The perturbed datasets are in the [./perturbed_datasets](./perturbed_datasets/)" folder. For each .csv file, the suffixes of the columns represent the following perturbations:
+For more details, please refer to the main paper Section 3.2. The perturbed datasets are in the [./perturbed_datasets](./perturbed_datasets/)" folder. For each .csv file, the suffixes of the columns represent the following perturbations:
 
 - Homophones: `_HF`
 - Typos: `_typos`
