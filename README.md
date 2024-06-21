@@ -26,7 +26,7 @@ We use the validation or test sets of each reasoning dataset as our source sampl
 - Syntactic perturbations alter sentence structure to evaluate the model’s understanding of grammar and sentence construction. We consider three types: It-cleft, Wh-cleft, and compound variations.
 - Semantic perturbations change the meaning or context of the text to evaluate the model’s understanding of deeper linguistic aspects. We consider three types: Red herrings, CheckList (Ribeiro et al., 2020) items, and StressTest (Naik et al., 2018) statements.
 
-For more details, please refer to the main paper Section 3.2. The perturbed datasets are in the [./perturbed_datasets](./perturbed_datasets/)" folder. For each .csv file, the suffixes of the columns represent the following perturbations:
+For more details, please refer to the main paper Section 3.2. The complete perturbed data generation process is demonstrated in [`perturbation_data_generation.ipynb`](./perturbation_data_generation.ipynb). The perturbed datasets are in the [./perturbed_datasets](./perturbed_datasets/)" folder. For each .csv file, the suffixes of the columns represent the following perturbations:
 
 - Homophones: `_HF`
 - Typos: `_typos`
@@ -39,7 +39,7 @@ For more details, please refer to the main paper Section 3.2. The perturbed data
 - StressTest: `_stress`
 
 ## Models
-We evaluate several leading LLMs for RUPBench on original and perturbed samples, including GPT4o (gpt 4o, 2024), Llama3-8B-Instruct, Llama3-70B-Instruct (AI@Meta, 2024), Phi-3-mini-128kInstruct, Phi-3-medium-128k-Instruct (Abdin et al., 2024), Gemma-2B-Instruct, and Gemma-7B-Instruct (Team et al., 2024). GPT-4o is accessed through the OpenAI API, while the other models are loaded from Hugging Face. For generating model responses, we use greedy decoding (temperature = 0). We demonstrate the general pipeline for running experiments on Hugging Face using sample_experiments.py.
+We evaluate several leading LLMs for RUPBench on original and perturbed samples, including GPT4o (gpt 4o, 2024), Llama3-8B-Instruct, Llama3-70B-Instruct (AI@Meta, 2024), Phi-3-mini-128kInstruct, Phi-3-medium-128k-Instruct (Abdin et al., 2024), Gemma-2B-Instruct, and Gemma-7B-Instruct (Team et al., 2024). GPT-4o is accessed through the OpenAI API, while the other models are loaded from Hugging Face. For generating model responses, we use greedy decoding (temperature = 0). We demonstrate the general pipeline for running experiments on Hugging Face using [`sample_experiments.py`](./sample_experiments.py).
 
 
 
