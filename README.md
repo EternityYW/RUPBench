@@ -19,6 +19,38 @@ We consider 15 representative text-based source reasoning datasets. The followin
 
 For more details, please refer to the main paper Section 3.1. The source datasets (validation/test sets) are in the [./source_datasets](./source_datasets/)" folder.
 
+Source link for each dataset:
+
+CommonsenseQA: https://www.tau-nlp.org/commonsenseqa (Talmor et al., 2019)
+
+TRAM: https://github.com/EternityYW/TRAM-Benchmark (Wang and Zhao, 2023)
+
+PIQA: https://leaderboard.allenai.org/physicaliqa/submissions/get-started (Bisk et al., 2020)
+
+QASC: https://github.com/allenai/qasc (Khot et al., 2020)
+
+Social IQA: https://allenai.org/data/socialiqa (Sap et al., 2019)
+
+Cosmos QA: https://wilburone.github.io/cosmos/ (Huang et al., 2019)
+
+NumerSense: https://inklab.usc.edu/NumerSense/ (Lin et al., 2020)
+
+RiddleSense: https://github.com/INK-USC/RiddleSense (Lin et al., 2021)
+
+ETHICS: https://github.com/hendrycks/ethics (Hendrycks et al., 2020)
+
+GSM8K: https://github.com/openai/grade-school-math (Cobbe et al., 2021)
+
+AQuA-RAT: https://github.com/google-deepmind/AQuA (Ling et al., 2017)
+
+ReClor: https://whyu.me/reclor/ (Yu et al., 2019)
+
+LogiQA2.0: https://github.com/csitfun/LogiQA2.0 (Liu et al., 2023)
+
+ART: https://github.com/allenai/abductive-commonsense-reasoning (Bhagavatula et al., 2019)
+
+MMLU: https://github.com/hendrycks/test Hendrycks et al., 2020)
+
 ## Perturbation Categories
 We use the validation or test sets of each reasoning dataset as our source samples for perturbations, categorized into lexical, syntactic, and semantic types. These perturbations are designed to induce incorrect responses from the LLM while preserving the original content's essence, ensuring the ground truth answer remains unchanged.
 
